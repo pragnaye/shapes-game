@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#main{
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.shape{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #000000;
+    margin-top: 10px; /* all these margins can be written as just margin: 10px; but I wanted to show you that you can also write them separately */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#circle:hover{
+    background-color: green;
+}
+
+#circle{
+    border-radius: 100%;
+  
+}
+
+#square:hover{
+    background-color: yellow;
+}
+
+#diamond:hover{
+    background-color: red;
+    
+}
+
+#diamond{
+    margin-top: 60px;
+    transform: rotate(45deg);
+    height: 150px;
+    width: 150px;
+    translate: 32px ; /* khiskane ke liye translate ka use karte hai */
+}
+
+#diamond h1{
+   transform: rotate(-45deg);
+}
+
+h1{
+    font-weight: bold;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #e1e29f;
+    text-align: center;
+    line-height: 40px;
+}
